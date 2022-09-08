@@ -1,0 +1,107 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+/* Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Design widths: Mobile 375px, Desktop 1440px */
+
+/* Variables */
+:root {
+    --color-cyan: hsl(193, 38%, 86%);
+    --color-neon: hsl(150, 100%, 66%);
+
+    --grey-blue: hsl(217, 19%, 38%);
+    --dark-grey-blue: hsl(219, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    font-size: 28px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background: var(--dark-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 { font-size: 5rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2.5rem; }
+h5 { font-size: 2rem; }
+h6 { font-size: 1rem; }
+p { font-size: 1rem; }
+
+img, picture, video, canvas, svg {
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button, a {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card {
+    background: var(--dark-grey-blue);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1.5rem 1.5rem 3.5rem;
+    border-radius: 0.5rem;
+}
+
+.advice-no {
+    color: var(--color-neon);
+    font-size: small;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+}
+
+.advice-text {
+    color: var(--color-cyan);
+}
+
+.dice {
+    position: absolute;
+    background-color: var(--color-neon);
+    padding: 1rem;
+    border-radius: 50%;
+    bottom: 0;
+    display: flex;
+    translate: 0 50%;
+    cursor: pointer;
+}
+
+.dice:hover {
+    background-color: rgb(137, 252, 178);
+    box-shadow: 0 0 30px 10px rgba(137, 252, 178, 0.3);
+}
+
+@media  screen and (max-width: 550px) {
+    .card {
+        max-width: 350px;
+    }
+}
