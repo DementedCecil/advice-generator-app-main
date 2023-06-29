@@ -82,6 +82,7 @@ button, a {
 
 .advice-text {
     color: var(--color-cyan);
+    text-align: center;
 }
 
 .dice {
